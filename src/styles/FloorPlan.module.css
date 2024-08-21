@@ -1,0 +1,94 @@
+.floorPlan {
+    display: grid;
+    grid-template-areas:
+      "livingRoom livingRoom kitchen kitchen"
+      "office office bathroom bathroom"
+      "bedroom bedroom masterBedroom masterBedroom"
+      "masterBath masterBath masterBath masterBath";
+    gap: 20px;
+    height: 80vh;
+    padding: 20px;
+    background-color: #1a2b49; /* Dark Blueprint Blue */
+    background-image: radial-gradient(#1a2b49 1px, transparent 1px),
+                      radial-gradient(#1a2b49 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    border: 2px solid #3a5d89;
+    position: relative;
+  }
+  
+  .room {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #a3c1e1; /* Light Blue Lines */
+    border-radius: 4px;
+    background-color: rgba(26, 43, 73, 0.3); /* Semi-transparent background */
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff; /* White Text */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-family: 'Courier New', Courier, monospace; /* Monospaced Font */
+  }
+  
+  .room:hover {
+    transform: scale(1.05);
+    border: 2px solid #a3c1e1; /* Solid border on hover */
+  }
+  
+  #livingRoom {
+    grid-area: livingRoom;
+  }
+  
+  #workshop {
+    grid-area: kitchen;
+  }
+  
+  #office {
+    grid-area: office;
+  }
+  
+  #bedroom {
+    grid-area: bedroom;
+  }
+  
+  #masterBedroom {
+    grid-area: masterBedroom;
+  }
+  
+  #masterBath {
+    grid-area: masterBath;
+  }
+  
+  
+  /* Style the links */
+  .room a {
+    color: #ffffff; /* White Links */
+    text-decoration: none;
+  }
+  
+  .room a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Optional: Adding a subtle glow effect to the text */
+  .room:hover {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+  }
+  
+  /* Optional: Adding a Blueprint-style grid overlay */
+  .floorPlan::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, transparent 23px, #3a5d89 24px),
+                      linear-gradient(90deg, transparent 23px, #3a5d89 24px);
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.5;
+  }
+  
