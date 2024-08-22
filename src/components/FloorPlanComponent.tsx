@@ -4,6 +4,7 @@ import styles from '../styles/FloorPlan.module.css';
 import modernLivingRoom from '../images/grey-living-room-ideas-1.jpg';
 import midcenturyModernKitchen from '../images/midcenturyModernKitchen.jpg';
 import office from '../images/office.jpg';
+import Bathroom from '../images/bathroom.jpg';
 
 const FloorPlanComponent: React.FC = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -40,6 +41,14 @@ const FloorPlanComponent: React.FC = () => {
                     <img src={office} alt="Office" />
                     <div className={styles.label} style={getLabelStyle()}>
                         Office
+                    </div>
+                </Link>
+            </div>
+            <div className={styles.room} id={styles.bathroom} onMouseMove={handleMouseMove}>
+                <Link to="/bathroom">
+                    <img src={Bathroom} alt="bathroom" />
+                    <div className={styles.label} style={getLabelStyle()}>
+                        Bathroom
                     </div>
                 </Link>
             </div>
