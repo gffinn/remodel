@@ -32,7 +32,22 @@
     transform: scale(1.05);
     opacity: 0.9;
   }
-  
+  .label {
+    position: fixed;
+    transform: translate(5px, 5px);
+    pointer-events: none; /* Ensures the label doesn't block the cursor */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: opacity 0.1s ease-in-out;
+    opacity: 0;
+    white-space: nowrap;
+  }
+  .room:hover .label {
+    opacity: 1; /* Show label on hover */
+  }
   #livingRoom {
     grid-area: livingRoom;
   }
