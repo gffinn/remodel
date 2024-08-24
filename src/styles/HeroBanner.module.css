@@ -1,0 +1,40 @@
+.heroBanner {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text pop */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.ctaButton {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #ff6f61; /* Or any color that suits your theme */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: #ff3f31;
+}

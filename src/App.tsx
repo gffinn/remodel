@@ -12,13 +12,15 @@ import MasterBath from './pages/MasterBath';
 import MasterBedroom from './pages/MasterBedroom';
 import Office from './pages/Office';
 import { RecoilRoot } from 'recoil';
+import HeroBanner from './pages/HeroBanner';
 
 const App: React.FC = () => {
   return (
     <RecoilRoot>
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HeroBanner />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
