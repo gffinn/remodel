@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/HeroBanner.module.css';
-import heroBanner from '../images/6799.jpg'
+import heroBanner from '../images/blue-background.jpg'
 import { Link } from 'react-router-dom';
 
 const HeroBanner: React.FC = () => {
