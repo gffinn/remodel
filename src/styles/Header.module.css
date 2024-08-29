@@ -1,32 +1,32 @@
 /* Header Styling */
 .header {
-  background-color: #f5f5f5; /* Light grey for a smooth transition */
-  padding: 10px 0;
+  background-color: #f5f5f5; 
+  padding: 1% 0;
   display: flex;
-  justify-content: space-around; /* Evenly spread the links */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  justify-content: space-around; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .header a {
-  color: #333; /* Dark grey for the text */
+  color: #333; 
   text-decoration: none;
   font-weight: 1000;
-  transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+  transition: color 0.3s ease-in-out;
+  font-size: larger;
 }
 
 .header a:hover {
-  color: #007bff; /* Highlight color on hover */
+  color: #007bff;
 }
 
 /* Logo Styling */
-.logo-div {
-  text-align: right; /* Center content within the div */
-  margin: 20px 0; /* Spacing between header and logo */
+.logoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
 }
-
-.logo-div img {
-  max-width: 150px; /* Adjust size as needed */
+.logoImage {
+  width: 30%; 
   height: auto;
-  display: block; /* Ensures the image behaves like a block element */
-  margin: 0 auto; /* Centers the image horizontally */
 }

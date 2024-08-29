@@ -3,26 +3,23 @@ import { useRecoilValue } from 'recoil';
 import demoDataAtom from '../demoData/demoData';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
+import styles from '../styles/ProjectCostGraph.module.css';
 
-// Register components needed for Chart.js
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
 
 interface ProjectCostGraphProps {
-  category: string; // Add a category prop to filter data
+  category: string; 
 }
 
 const ProjectCostGraph: React.FC<ProjectCostGraphProps> = ({ category }) => {
   const data = useRecoilValue(demoDataAtom);
-
-  // Find the breakdown for the selected category
+  
   const categoryData = data.breakdown.find(item => item.category === category);
 
-  // Return null if no data is available for the selected category
   if (!categoryData) {
     return <div>No data available for {category}</div>;
   }
 
-  // Prepare data for the chart
   const chartData = {
     labels: categoryData.subcategories.map(sub => sub.item),
     datasets: [
@@ -36,7 +33,6 @@ const ProjectCostGraph: React.FC<ProjectCostGraphProps> = ({ category }) => {
     ],
   };
 
-  // Chart options
   const options = {
     responsive: true,
     plugins: {
@@ -54,9 +50,11 @@ const ProjectCostGraph: React.FC<ProjectCostGraphProps> = ({ category }) => {
   };
 
   return (
-    <div>
+    <div className={styles.graphContainer}>
       <h2>{category} Cost Breakdown</h2>
-      <Bar data={chartData} options={options} />
+      <div className={styles.chartWrapper}>
+        <Bar data={chartData} options={options} />
+      </div>
     </div>
   );
 };

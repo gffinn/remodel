@@ -8,7 +8,7 @@
     gap: 20px;
     height: 80vh;
     padding: 20px;
-    background-color: #f0f0f0; /* Background color */
+    background-color: #f0f0f0; 
     position: relative;
   }
   
@@ -35,8 +35,8 @@
   .label {
     position: fixed;
     transform: translate(5px, 5px);
-    pointer-events: none; /* Ensures the label doesn't block the cursor */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    pointer-events: none; 
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -46,7 +46,7 @@
     white-space: nowrap;
   }
   .room:hover .label {
-    opacity: 1; /* Show label on hover */
+    opacity: 1;
   }
   #livingRoom {
     grid-area: livingRoom;
