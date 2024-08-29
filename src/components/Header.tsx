@@ -13,7 +13,7 @@ const Header = () => {
                 <Link to="/contact">Contact</Link>
             </div>
             <div className={styles.logoDiv}>
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt="Logo" className={styles.logoImage} />
             </div>
         </>
     );

@@ -1,23 +1,21 @@
 import React from 'react';
 import styles from '../styles/HeroBanner.module.css';
-import heroBanner from '../images/blue-background.jpg'
-import { Link } from 'react-router-dom';
+import heroBanner from '../images/heroBannerBlack.jpg';
 
-const HeroBanner: React.FC = () => {
+interface HeroBannerProps {
+  enterSite: () => void;
+}
 
-
-
-    return (
-      <div className={styles.heroBanner} style={{ backgroundImage: `url(${heroBanner})` }}>
-        <div className={styles.overlay}>
+const HeroBanner: React.FC<HeroBannerProps> = ({ enterSite }) => {
+  return (
+    <div className={styles.heroBanner} style={{ backgroundImage: `url(${heroBanner})` }}>
+      <div className={styles.overlay}>
           <h1>Grant Finn</h1>
           <p>Showcasing Personal Projects</p>  
-          <Link to='/home'>
-          <button className={styles.ctaButton}>Explore My Portfolio</button>
-          </Link>
-        </div>
+          <button className={styles.ctaButton} onClick={enterSite}>Enter Portfolio</button>
       </div>
-    );
-  };
-  
-  export default HeroBanner;
+    </div>
+  );
+};
+
+export default HeroBanner;
