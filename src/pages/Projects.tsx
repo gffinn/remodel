@@ -1,12 +1,13 @@
 // src/pages/Projects.tsx
-import React from 'react';
-import Header from '../components/Header';
+import React from "react";
+import Header from "../components/Header";
 
 const Projects: React.FC = () => {
   return (
-    <><Header />
-    <div>Projects</div></>
-  
+    <>
+      <Header />
+      <div>Projects</div>
+    </>
   );
 };
 

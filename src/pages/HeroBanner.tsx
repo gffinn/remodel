@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from '../styles/HeroBanner.module.css';
-import heroBanner from '../images/heroBannerBlack.jpg';
+import React from "react";
+import styles from "../styles/HeroBanner.module.css";
+import heroBanner from "../images/blue-background.jpg";
 
 interface HeroBannerProps {
   enterSite: () => void;
@@ -8,11 +8,16 @@ interface HeroBannerProps {
 
 const HeroBanner: React.FC<HeroBannerProps> = ({ enterSite }) => {
   return (
-    <div className={styles.heroBanner} style={{ backgroundImage: `url(${heroBanner})` }}>
+    <div
+      className={styles.heroBanner}
+      style={{ backgroundImage: `url(${heroBanner})` }}
+    >
       <div className={styles.overlay}>
-          <h1>Grant Finn</h1>
-          <p>Showcasing Personal Projects</p>  
-          <button className={styles.ctaButton} onClick={enterSite}>Enter Portfolio</button>
+        <h1>Grant Finn</h1>
+        <p>Showcasing Personal Projects</p>
+        <button className={styles.ctaButton} onClick={enterSite}>
+          Enter Portfolio
+        </button>
       </div>
     </div>
   );

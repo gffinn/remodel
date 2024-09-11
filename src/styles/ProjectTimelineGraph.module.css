@@ -1,7 +1,6 @@
-/* src/styles/ProjectCostGraph.module.css */
 .graphContainer {
   width: 45%; /* Set the width to 45% of the page */
-  margin: 0 left; /* Center the graph horizontally */
+  margin: 0 right; /* Center the graph horizontally */
   padding: 20px; /* Add some padding around the graph */
   box-sizing: border-box; /* Ensure padding does not affect the width */
 }

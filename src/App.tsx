@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import Bathroom from './pages/Bathroom';
-import Livingroom from './pages/Livingroom';
-import Bedroom from './pages/Bedroom';
-import Kitchen from './pages/Kitchen';
-import MasterBath from './pages/MasterBath';
-import MasterBedroom from './pages/MasterBedroom';
-import Office from './pages/Office';
-import { RecoilRoot } from 'recoil';
-import HeroBanner from './pages/HeroBanner';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Bathroom from "./pages/Bathroom";
+import Livingroom from "./pages/Livingroom";
+import Bedroom from "./pages/Bedroom";
+import Kitchen from "./pages/Kitchen";
+import MasterBath from "./pages/MasterBath";
+import MasterBedroom from "./pages/MasterBedroom";
+import Office from "./pages/Office";
+import { RecoilRoot } from "recoil";
+import HeroBanner from "./pages/HeroBanner";
 
 const App: React.FC = () => {
   const [isLandingPage, setIsLandingPage] = useState(true);
