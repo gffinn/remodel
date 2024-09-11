@@ -1,78 +1,79 @@
 .floorPlan {
-    display: grid;
-    grid-template-areas:
-      'livingRoom kitchen'
-      'office bathroom'
-      'bedroom masterBedroom'
-      'masterBath masterBath';
-    gap: 20px;
-    height: 80vh;
-    padding: 20px;
-    background-color: #f0f0f0; 
-    position: relative;
-  }
-  
-  .room {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .room img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .room:hover img {
-    transform: scale(1.05);
-    opacity: 0.9;
-  }
-  .label {
-    position: fixed;
-    transform: translate(5px, 5px);
-    pointer-events: none; 
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: opacity 0.1s ease-in-out;
-    opacity: 0;
-    white-space: nowrap;
-  }
-  .room:hover .label {
-    opacity: 1;
-  }
-  #livingRoom {
-    grid-area: livingRoom;
-  }
-  
-  #kitchen {
-    grid-area: kitchen;
-  }
-  
-  #office {
-    grid-area: office;
-  }
-  
-  #bathroom {
-    grid-area: bathroom;
-  }
-  
-  #bedroom {
-    grid-area: bedroom;
-  }
-  
-  #masterBedroom {
-    grid-area: masterBedroom;
-  }
-  
-  #masterBath {
-    grid-area: masterBath;
-  }
-  
+  display: grid;
+  grid-template-areas:
+    "livingRoom kitchen"
+    "office bathroom"
+    "bedroom masterBedroom"
+    "masterBath masterBath";
+  gap: 20px;
+  height: 80vh;
+  padding: 20px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.room img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.room:hover img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.label {
+  position: fixed;
+  transform: translate(5px, 5px);
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
+  white-space: nowrap;
+}
+.room:hover .label {
+  opacity: 1;
+}
+#livingRoom {
+  grid-area: livingRoom;
+}
+
+#kitchen {
+  grid-area: kitchen;
+}
+
+#office {
+  grid-area: office;
+}
+
+#bathroom {
+  grid-area: bathroom;
+}
+
+#bedroom {
+  grid-area: bedroom;
+}
+
+#masterBedroom {
+  grid-area: masterBedroom;
+}
+
+#masterBath {
+  grid-area: masterBath;
+}

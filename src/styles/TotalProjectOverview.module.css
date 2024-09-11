@@ -1,0 +1,27 @@
+.projectOverview {
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background to contrast with dark themes */
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333; /* Dark color to maintain readability */
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 0.5rem;
+  line-height: 0.75;
+  color: #555;
+}
