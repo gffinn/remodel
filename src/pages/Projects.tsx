@@ -6,7 +6,6 @@ const Projects: React.FC = () => {
   return (
     <>
       <Header />
-      <div>Projects</div>
     </>
   );
 };
